@@ -6,7 +6,7 @@
 /*   By: tmarx <tmarx@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/04 04:47:48 by tom               #+#    #+#             */
-/*   Updated: 2019/10/04 04:49:32 by tom              ###   ########.fr       */
+/*   Updated: 2019/10/07 01:32:48 by tom              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char *ft_strncpy(char *dest, const char *src, size_t n)
 	int i;
 
 	i = 0;
-	while (src[i] && i < n)
+	while (src[i] && i < (int) n)
 	{
 		dest[i] = src[i];
 		i++;

@@ -6,13 +6,13 @@
 /*   By: tmarx <tmarx@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/04 13:34:01 by tom               #+#    #+#             */
-/*   Updated: 2019/10/04 13:35:16 by tom              ###   ########.fr       */
+/*   Updated: 2019/10/07 01:29:19 by tom              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcat(char *dest, char *src)
+char	*ft_strcat(char *dest, const char *src)
 {
 	int i;
 

@@ -6,7 +6,7 @@
 /*   By: tmarx <tmarx@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/04 04:28:09 by tom               #+#    #+#             */
-/*   Updated: 2019/10/04 04:36:54 by tom              ###   ########.fr       */
+/*   Updated: 2019/10/07 01:29:56 by tom              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char *ft_strdup(const char *s)
 	new = malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (new)
 	{
-		while (i < ft_strlen(s))
+		while (i < (int) ft_strlen(s))
 		{
 			new[i] = s[i];
 			i++;

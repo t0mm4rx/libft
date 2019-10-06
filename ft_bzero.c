@@ -6,17 +6,17 @@
 /*   By: tmarx <tmarx@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/04 03:01:19 by tom               #+#    #+#             */
-/*   Updated: 2019/10/04 03:33:52 by tom              ###   ########.fr       */
+/*   Updated: 2019/10/07 01:25:06 by tom              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void bzero(void *s, long unsigned int n)
+void bzero(void *s, size_t n)
 {
 	int i;
 
 	i = 0;
-	while (i < n)
+	while (i < (int) n)
 		((unsigned char *) s)[i++] = '\0';
 }

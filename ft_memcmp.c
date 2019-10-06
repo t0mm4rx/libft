@@ -6,7 +6,7 @@
 /*   By: tmarx <tmarx@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/04 04:20:10 by tom               #+#    #+#             */
-/*   Updated: 2019/10/04 04:27:14 by tom              ###   ########.fr       */
+/*   Updated: 2019/10/07 01:28:50 by tom              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
 	int i;
 
 	i = 0;
-	while (i < n && ((unsigned char *)s1)[i] == ((unsigned char *)s2)[i])
+	while (i < (int) n && ((unsigned char *)s1)[i] == ((unsigned char *)s2)[i])
 		i++;
 	return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
 }

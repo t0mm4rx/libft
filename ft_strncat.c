@@ -6,13 +6,13 @@
 /*   By: tmarx <tmarx@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/04 13:35:40 by tom               #+#    #+#             */
-/*   Updated: 2019/10/04 13:36:44 by tom              ###   ########.fr       */
+/*   Updated: 2019/10/07 01:31:46 by tom              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *dest, char *src, unsigned int nb)
+char	*ft_strncat(char *dest, const char *src, size_t nb)
 {
 	unsigned int	j;
 	unsigned int	i;
