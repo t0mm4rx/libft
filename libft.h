@@ -6,7 +6,7 @@
 /*   By: tmarx <tmarx@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/04 03:15:36 by tom               #+#    #+#             */
-/*   Updated: 2019/10/07 15:32:04 by tom              ###   ########.fr       */
+/*   Updated: 2019/10/07 16:54:11 by tom              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -91,4 +91,5 @@ void			ft_lstaddend(t_list **alst, t_list *new);
 int				ft_atoi_base(char *str, char *base);
 char			*ft_itoa_base(int value, char *base);
 void			*ft_calloc(size_t nmenb, size_t size);
+char			**ft_split(char const *s, char c);
 #endif
