@@ -6,7 +6,7 @@
 /*   By: tmarx <tmarx@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/04 03:15:36 by tom               #+#    #+#             */
-/*   Updated: 2019/10/07 14:34:29 by tom              ###   ########.fr       */
+/*   Updated: 2019/10/07 15:32:04 by tom              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -78,7 +78,7 @@ char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);
 unsigned int	ft_strcntfirstchar(char *str, const char *charset);
 unsigned int	ft_strcntlastchar(char *str, const char *charset);
-char			*ft_strtrim(char const *s);
+char			*ft_strtrim(char const *s1, char const *set);
 char			**ft_strsplitchrset(char *str, const char *charset);
 void			*ft_dup(void const *content, size_t content_size);
 t_list			*ft_lstnew(void const *content, size_t content_size);
