@@ -11,7 +11,7 @@ ft_strcat.c ft_strchr.c ft_strcmp.c ft_strcpy.c \
 ft_strdup.c \
 ft_strlcat.c ft_strlen.c ft_strncat.c ft_strncmp.c \
 ft_strncpy.c ft_strnstr.c ft_strrchr.c \
-ft_strstr.c ft_tolower.c ft_toupper.c
+ft_strstr.c ft_tolower.c ft_toupper.c ft_calloc.c
 OBJ = $(SRC:.c=.o)
 
 $(NAME): $(OBJ)
@@ -31,4 +31,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: clean clean
+.PHONY: clean
