@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+#ifdef DEBUG
+#include <stdio.h>
+int main()
+{
+	printf("%s\n", ft_strnstr("lorem ipsum dolor sit amet", "dolor", 15));
+}
+#endif
+
 char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 {
 	int i;
@@ -23,7 +31,7 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 	while (str[i] && i < (int) len)
 	{
 		j = 0;
-		while (to_find[j] == str[i + j])
+		while (to_find[j] == str[i + j] && i + j < (int) len)
 		{
 			if (to_find[j + 1] == '\0')
 			{

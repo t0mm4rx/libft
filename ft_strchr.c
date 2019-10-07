@@ -16,8 +16,8 @@
 #include <stdio.h>
 int main()
 {
-	char test[20] = "Hello world !";
-	printf("%s", ft_strchr(test,'l'));
+	char test[] = "bonjour";
+	printf("%s", ft_strchr(test,'s'));
 }
 #endif
 
@@ -26,6 +26,11 @@ char *ft_strchr(const char *s, int c)
 	int i;
 
 	i = 0;
-	while (c != s[i++]);
-	return ((char *)s + i - 1);
+	while (c != s[i])
+	{
+		if (s[i] == '\0')
+			return (NULL);
+		i++;
+	}
+	return ((char *)s + i);
 }
