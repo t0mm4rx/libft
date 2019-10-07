@@ -6,7 +6,7 @@
 /*   By: tmarx <tmarx@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/04 03:15:36 by tom               #+#    #+#             */
-/*   Updated: 2019/10/07 14:04:50 by tom              ###   ########.fr       */
+/*   Updated: 2019/10/07 14:34:29 by tom              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -74,7 +74,7 @@ char			*ft_strmap(char const *s, char (*f)(char));
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int				ft_strequ(char const *s1, char const *s2);
 int				ft_strnequ(char const *s1, char const *s2, size_t n);
-char			*ft_strsub(char const *s, unsigned int start, size_t len);
+char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);
 unsigned int	ft_strcntfirstchar(char *str, const char *charset);
 unsigned int	ft_strcntlastchar(char *str, const char *charset);
