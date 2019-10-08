@@ -6,4 +6,4 @@
 - [ ] strrchr
 - [ ] ft_strrchr, ok
 - [x] ft_strncmp
-- [ ] ft_memchr
+- [x] ft_memchr
