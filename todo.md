@@ -1,5 +1,9 @@
 # ToDo
 
-- [ ] memccpy
+- [x] memccpy
 - [ ] itoa
-- [ ] memmove
+- [x] memmove
+- [ ] strrchr
+- [ ] ft_strrchr, ok
+- [x] ft_strncmp
+- [ ] ft_memchr
