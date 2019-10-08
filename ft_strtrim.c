@@ -6,19 +6,11 @@
 /*   By: tmarx <tmarx@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 15:06:45 by tom               #+#    #+#             */
-/*   Updated: 2019/10/07 15:44:56 by tom              ###   ########.fr       */
+/*   Updated: 2019/10/08 12:19:58 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-#ifdef DEBUG
-#include <stdio.h>
-int main()
-{
-	printf("%s\n", ft_strtrim("Hello world !", " o"));
-}
-#endif
 
 int		in_charset(char const *s, char c)
 {

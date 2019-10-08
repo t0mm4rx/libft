@@ -3,18 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tmarx <tmarx@42.fr>                        +#+  +:+       +#+        */
+/*   By: tmarx <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/04 03:15:36 by tom               #+#    #+#             */
-/*   Updated: 2019/10/07 16:54:11 by tom              ###   ########.fr       */
+/*   Created: 2019/10/08 12:09:33 by tmarx             #+#    #+#             */
+/*   Updated: 2019/10/08 12:10:49 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#ifndef LIBFT_H
-#define LIBFT_H
 
-#include <unistd.h>
-#include <string.h>
-#include <stdlib.h>
+#ifndef LIBFT_H
+
+# define LIBFT_H
+# include <unistd.h>
+# include <string.h>
+# include <stdlib.h>
 
 typedef struct	s_list
 {
@@ -92,4 +93,5 @@ int				ft_atoi_base(char *str, char *base);
 char			*ft_itoa_base(int value, char *base);
 void			*ft_calloc(size_t nmenb, size_t size);
 char			**ft_split(char const *s, char c);
+size_t			ft_strlcpy(char *dest, const char *src, size_t dstsize);
 #endif
