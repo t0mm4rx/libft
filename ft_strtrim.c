@@ -6,13 +6,13 @@
 /*   By: tmarx <tmarx@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 15:06:45 by tom               #+#    #+#             */
-/*   Updated: 2019/10/08 12:19:58 by tmarx            ###   ########.fr       */
+/*   Updated: 2019/10/09 15:56:12 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		in_charset(char const *s, char c)
+static int	in_charset(char const *s, char c)
 {
 	int i;
 
@@ -26,7 +26,7 @@ int		in_charset(char const *s, char c)
 	return (0);
 }
 
-char	*ft_strtrim(char const *s1, char const *set)
+char		*ft_strtrim(char const *s1, char const *set)
 {
 	int		len;
 	int		i;

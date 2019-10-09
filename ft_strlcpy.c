@@ -6,7 +6,7 @@
 /*   By: tmarx <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 10:14:29 by tmarx             #+#    #+#             */
-/*   Updated: 2019/10/08 12:21:33 by tmarx            ###   ########.fr       */
+/*   Updated: 2019/10/09 16:22:13 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,17 @@
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	unsigned int i;
+	size_t len;
 
-	i = 0;
-	if (size >= 1)
+	len = ft_strlen(src);
+	if (len + 1 < size)
 	{
-		while (i < size - 1 && src[i])
-		{
-			dest[i] = src[i];
-			i++;
-		}
-		while (i < size)
-		{
-			dest[i] = '\0';
-			i++;
-		}
+		ft_memcpy(dest, src, len + 1);
 	}
-	i = 0;
-	while (src[i++])
+	else if (size != 0)
 	{
+		ft_memcpy(dest, src, size - 1);
+		dest[size - 1] = '\0';
 	}
-	return (i - 1);
+	return (len);
 }

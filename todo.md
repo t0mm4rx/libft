@@ -1,16 +1,13 @@
-# ToDo
-
-- [x] memccpy
-- [ ] itoa
-- [x] memmove
-- [ ] strrchr
-- [ ] strlcpy
-- [ ] ft_strrchr, ok
-- [x] ft_strncmp
-- [x] ft_memchr
+# To do
 
 - [ ] virer fonctions inutiles header
+- [x] ft_strlcpy
+- [x] ft_strrchr
+- [x] ft_strtim
+- [ ] ft_split
+- [x] fonctions auxiliaires --> static
+- [ ] verifier sujet strtrim
 
 # To test
-- [ ] strlcpy
-- [ ] gen headers
+- [ ] ft_substr
+- [ ] ft_strtrim

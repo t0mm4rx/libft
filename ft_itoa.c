@@ -6,13 +6,13 @@
 /*   By: tmarx <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 12:36:59 by tmarx             #+#    #+#             */
-/*   Updated: 2019/10/09 15:46:22 by tmarx            ###   ########.fr       */
+/*   Updated: 2019/10/09 15:58:23 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_n_in_ptr(char *ptr, int n, int len)
+static void	ft_n_in_ptr(char *ptr, int n, int len)
 {
 	int i;
 
@@ -35,7 +35,7 @@ void	ft_n_in_ptr(char *ptr, int n, int len)
 		ft_n_in_ptr(ptr, n / 10, len);
 }
 
-int		ft_get_number_length(int n)
+static int	ft_get_number_length(int n)
 {
 	int len;
 
@@ -52,7 +52,7 @@ int		ft_get_number_length(int n)
 	return (len);
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	char	*res;
 	int		len;
