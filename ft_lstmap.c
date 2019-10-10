@@ -6,7 +6,7 @@
 /*   By: tmarx <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/10 14:24:36 by tmarx             #+#    #+#             */
-/*   Updated: 2019/10/10 14:24:38 by tmarx            ###   ########.fr       */
+/*   Updated: 2019/10/10 14:29:42 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ t_list	*ft_lstmap(t_list *list, t_list *(*f)(void *))
 	ptr = list;
 	while (ptr->next)
 	{
-		ptr2->next = f(ptr->next->content); 
+		ptr2->next = f(ptr->next->content);
 		ptr = ptr->next;
 		ptr2 = ptr2->next;
 	}
