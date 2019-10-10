@@ -2,8 +2,6 @@ NAME=libft.a
 CC=gcc
 CFLAGS=-Wall -Wextra -Werror
 RM=rm -f
-LDFLAGS=-L.
-LDLIBS=-lft
 SRC = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c \
 ft_isascii.c ft_isdigit.c ft_isprint.c \
 ft_memccpy.c ft_memchr.c ft_memcmp.c ft_memcpy.c \
@@ -19,8 +17,7 @@ ft_lstclear.c ft_lstiter.c ft_lstmap.c
 OBJ = $(SRC:.c=.o)
 
 $(NAME): $(OBJ)
-		ar rc $(NAME) $(OBJ)
-		ranlib $(NAME)
+		ar rcs $(NAME) $(OBJ)
 
 %.o: %.c
 		$(CC) -I. -o $@ -c $? $(CFLAGS)

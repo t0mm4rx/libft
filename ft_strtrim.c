@@ -6,7 +6,7 @@
 /*   By: tmarx <tmarx@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 15:06:45 by tom               #+#    #+#             */
-/*   Updated: 2019/10/09 15:56:12 by tmarx            ###   ########.fr       */
+/*   Updated: 2019/10/10 14:17:51 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,28 +26,50 @@ static int	in_charset(char const *s, char c)
 	return (0);
 }
 
-char		*ft_strtrim(char const *s1, char const *set)
+static size_t	trim_length(char const *s1, char const *set)
 {
-	int		len;
-	int		i;
-	int		j;
-	char	*res;
+	int	i;
+	int	j;
+	int	len;
 
-	len = 0;
 	i = 0;
 	j = 0;
-	while (s1[i])
-		len += 1 - in_charset(set, s1[i++]);
-	res = malloc(len + 1);
-	if (!res)
-		return (NULL);
-	i = 0;
-	while (s1[j])
+	while (s1[i] && in_charset(set, s1[i]))
+		i++;
+	if (i == (int)ft_strlen(s1))
+		return (0);
+	len = ft_strlen(s1) - i;
+	i = ft_strlen(s1) - 1;
+	while (i && in_charset(set, s1[i]))
 	{
-		if (!in_charset(set, s1[j]))
-			res[i++] = s1[j];
+		i--;
 		j++;
 	}
-	res[i] = '\0';
+	len -= j;
+	return (len);
+}
+
+char		*ft_strtrim(char const *s1, char const *set)
+{
+	int	len;
+	int	i;
+	char	*res;
+	int	j;
+
+	if (!s1)
+		return (NULL);
+	i = 0;
+	j = 0;
+	len = trim_length(s1, set);
+	if (!len)
+		return ("");
+	res = ft_calloc(sizeof(char), len + 1);
+	while (in_charset(set, s1[i]))
+		i++;
+	while (j < len)
+	{
+		res[j] = s1[i + j];
+		j++;
+	}
 	return (res);
 }
