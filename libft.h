@@ -6,7 +6,7 @@
 /*   By: tmarx <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 12:09:33 by tmarx             #+#    #+#             */
-/*   Updated: 2019/10/09 17:30:05 by tmarx            ###   ########.fr       */
+/*   Updated: 2019/10/10 16:32:05 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ char			*ft_strtrim(char const *s1, char const *set);
 t_list			*ft_lstnew(void *content);
 void			ft_lstadd_front(t_list **list, t_list *new);
 void			ft_lstadd_back(t_list **list, t_list *new);
-int			ft_lstsize(t_list *list);
+int				ft_lstsize(t_list *list);
 t_list			*ft_lstlast(t_list *list);
 void			ft_lstdelone(t_list *alst, void (*del)(void *));
 void			ft_lstclear(t_list **list, void (*del)(void *));
