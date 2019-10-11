@@ -11,7 +11,7 @@
 - [x] voir quel est le fuck avec ft_strdelone
 - [x] ft_lstiter ==> application ? la valeur passe juste dans la fonction ou on la modifie ?
 - [x] ft_lstmap ==> on envoi le contenu du node ou l'objet ?
-- [ ] ft_lstadd_back_bonus
+- [x] ft_lstadd_back_bonus
 - [ ] regle make bonus
 
 # To test
