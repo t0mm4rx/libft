@@ -6,13 +6,15 @@
 - [x] ft_strtim
 - [x] ft_split
 - [x] fonctions auxiliaires --> static
-- [ ] verifier sujet strtrim
+- [x] verifier sujet strtrim
 - [x] fn bonus
-- [ ] voir quel est le fuck avec ft_strdelone
-- [ ] ft_lstiter ==> application ? la valeur passe juste dans la fonction ou on la modifie ?
-- [ ] ft_lstmap ==> on envoi le contenu du node ou l'objet ?
+- [x] voir quel est le fuck avec ft_strdelone
+- [x] ft_lstiter ==> application ? la valeur passe juste dans la fonction ou on la modifie ?
+- [x] ft_lstmap ==> on envoi le contenu du node ou l'objet ?
+- [ ] ft_lstadd_back_bonus
+- [ ] regle make bonus
 
 # To test
-- [ ] ft_substr
-- [ ] ft_strtrim
-- [ ] ft_split
+- [x] ft_substr
+- [x] ft_strtrim
+- [x] ft_split

@@ -6,7 +6,7 @@
 /*   By: tmarx <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/10 14:24:08 by tmarx             #+#    #+#             */
-/*   Updated: 2019/10/10 14:24:10 by tmarx            ###   ########.fr       */
+/*   Updated: 2019/10/11 12:59:22 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_lstiter(t_list *list, void (*f)(void *))
 	ptr = list;
 	while (ptr)
 	{
-		f(ptr->content);
+		f(ptr);
 		ptr = ptr->next;
 	}
 }
