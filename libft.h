@@ -6,7 +6,7 @@
 /*   By: tmarx <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 12:09:33 by tmarx             #+#    #+#             */
-/*   Updated: 2019/10/10 16:32:05 by tmarx            ###   ########.fr       */
+/*   Updated: 2019/10/11 22:07:29 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ t_list			*ft_lstlast(t_list *list);
 void			ft_lstdelone(t_list *alst, void (*del)(void *));
 void			ft_lstclear(t_list **list, void (*del)(void *));
 void			ft_lstiter(t_list *list, void (*f)(void *));
-t_list			*ft_lstmap(t_list *list, t_list *(*f)(void *));
+t_list			*ft_lstmap(t_list *list, void *(*f)(void *));
 void			*ft_calloc(size_t nmenb, size_t size);
 char			**ft_split(char const *s, char c);
 size_t			ft_strlcpy(char *dest, const char *src, size_t dstsize);
