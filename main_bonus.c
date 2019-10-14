@@ -43,6 +43,9 @@ int main()
 
 	printf("** Adding nodes to the list (ft_lstadd_new / ft_lstadd_back)\n");
 	ft_lstadd_front(&list, ft_lstnew("Hey,"));
+
+	ft_lstadd_front(NULL, NULL);
+
 	ft_lstadd_back(&list, ft_lstnew("World"));
 	print_list(list);
 
