@@ -6,7 +6,7 @@
 /*   By: tmarx <tmarx@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 15:55:02 by tom               #+#    #+#             */
-/*   Updated: 2019/10/09 17:14:56 by tmarx            ###   ########.fr       */
+/*   Updated: 2019/10/14 08:47:46 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,8 @@ char			**ft_split(char const *s, char c)
 	char	**res;
 	int		splits;
 
+	if (!s)
+		return (NULL);
 	splits = count_splits(s, c);
 	res = ft_calloc(sizeof(char *), splits + 1);
 	if (!res)

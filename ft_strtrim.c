@@ -6,7 +6,7 @@
 /*   By: tmarx <tmarx@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 15:06:45 by tom               #+#    #+#             */
-/*   Updated: 2019/10/10 15:44:03 by tmarx            ###   ########.fr       */
+/*   Updated: 2019/10/14 08:37:10 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ char				*ft_strtrim(char const *s1, char const *set)
 	char	*res;
 	int		j;
 
-	if (!s1)
+	if (!s1 || !set)
 		return (NULL);
 	i = 0;
 	j = 0;

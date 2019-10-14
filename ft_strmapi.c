@@ -6,7 +6,7 @@
 /*   By: tmarx <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 15:29:58 by tmarx             #+#    #+#             */
-/*   Updated: 2019/10/09 15:30:19 by tmarx            ###   ########.fr       */
+/*   Updated: 2019/10/14 08:55:35 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	int		len;
 	int		i;
 
+	if (!f || !s)
+		return (NULL);
 	len = ft_strlen(s);
 	res = ft_calloc(sizeof(char), len + 1);
 	if (!res)
