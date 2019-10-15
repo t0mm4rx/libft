@@ -59,4 +59,24 @@ int main()
 	printf("** Testing ft_lstclear\n");
 	ft_lstclear(&list, &del);
 	print_list(list);
+
+
+	t_list *list2;
+	ft_lstdelone(list2, NULL);
+	list2 = ft_lstnew(NULL);
+	list2 = ft_lstnew("ok");
+	ft_lstdelone(list2, NULL);
+	ft_lstsize(NULL);
+
+	t_list *list3 = NULL;
+	ft_lstadd_back(&list3, ft_lstnew("ok"));
+	ft_lstadd_back(NULL, ft_lstnew("ok"));
+	ft_lstadd_front(NULL, ft_lstnew("ok"));
+	ft_lstadd_front(NULL, NULL);
+	ft_lstadd_back(NULL, NULL);
+
+	t_list *list4 = NULL;
+	ft_lstclear(NULL, NULL);
+	ft_lstclear(&list4, NULL);
+	ft_lstlast(NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: tmarx <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/10 14:24:49 by tmarx             #+#    #+#             */
-/*   Updated: 2019/10/10 15:41:05 by tmarx            ###   ########.fr       */
+/*   Updated: 2019/10/15 18:46:13 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int	ft_lstsize(t_list *list)
 	t_list	*ptr;
 
 	i = 0;
+	if (!list)
+		return (0);
 	ptr = list;
 	while (ptr)
 	{

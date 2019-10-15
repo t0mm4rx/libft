@@ -6,7 +6,7 @@
 /*   By: tmarx <tmarx@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 14:24:51 by tom               #+#    #+#             */
-/*   Updated: 2019/10/14 08:19:06 by tmarx            ###   ########.fr       */
+/*   Updated: 2019/10/15 18:25:01 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*res;
 
 	if (!s || len == 0 || start > ft_strlen(s) - 1)
-		return ("");
+		return (ft_calloc(sizeof(char), 1));
 	i = 0;
 	while (s[i++ + start] && i < len)
 	{

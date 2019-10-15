@@ -6,7 +6,7 @@
 /*   By: tmarx <tmarx@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 15:06:45 by tom               #+#    #+#             */
-/*   Updated: 2019/10/14 08:37:10 by tmarx            ###   ########.fr       */
+/*   Updated: 2019/10/15 18:23:10 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ char				*ft_strtrim(char const *s1, char const *set)
 	j = 0;
 	len = trim_length(s1, set);
 	if (!len)
-		return ("");
+		return (ft_calloc(sizeof(char), 1));
 	res = ft_calloc(sizeof(char), len + 1);
 	while (in_charset(set, s1[i]))
 		i++;

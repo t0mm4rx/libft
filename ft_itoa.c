@@ -6,7 +6,7 @@
 /*   By: tmarx <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 12:36:59 by tmarx             #+#    #+#             */
-/*   Updated: 2019/10/09 15:58:23 by tmarx            ###   ########.fr       */
+/*   Updated: 2019/10/15 18:21:28 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ char		*ft_itoa(int n)
 	res = ft_calloc(sizeof(char), len + 1);
 	if (n <= -2147483648)
 	{
+		res = ft_calloc(sizeof(char), 12);
 		res = "-2147483648";
 		return (res);
 	}
