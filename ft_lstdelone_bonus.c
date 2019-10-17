@@ -6,7 +6,7 @@
 /*   By: tmarx <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/10 14:24:03 by tmarx             #+#    #+#             */
-/*   Updated: 2019/10/15 18:48:19 by tmarx            ###   ########.fr       */
+/*   Updated: 2019/10/15 19:18:16 by tmarx            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstdelone(t_list *el, void (*del)(void *))
 {
 	if (del && el)
 	{
-		del(el);
+		del(el->content);
 		free(el);
 	}
 }
